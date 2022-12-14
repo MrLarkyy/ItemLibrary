@@ -6,7 +6,7 @@
 
     <groupId>xyz.larkyy</groupId>
     <artifactId>ItemLibrary</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <packaging>jar</packaging>
 
     <name>ItemLibrary</name>
@@ -68,6 +68,10 @@
 
     <repositories>
         <repository>
+            <id>phoenix</id>
+            <url>https://nexus.phoenixdvpt.fr/repository/maven-public/</url>
+        </repository>
+        <repository>
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
@@ -124,6 +128,12 @@
             <groupId>com.github.LoneDev6</groupId>
             <artifactId>api-itemsadder</artifactId>
             <version>3.2.3c</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.Indyuce</groupId>
+            <artifactId>MMOItems-API</artifactId>
+            <version>6.7.5-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

@@ -3,10 +3,7 @@ package xyz.larkyy.itemlibrary;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
-import xyz.larkyy.itemlibrary.factories.HDBFactory;
-import xyz.larkyy.itemlibrary.factories.IAFactory;
-import xyz.larkyy.itemlibrary.factories.MMFactory;
-import xyz.larkyy.itemlibrary.factories.OraxenFactory;
+import xyz.larkyy.itemlibrary.factories.*;
 import xyz.larkyy.itemlibrary.impl.*;
 import java.util.HashMap;
 import java.util.List;
@@ -22,6 +19,7 @@ public class CustomItemHandler {
         itemRegisters.put("oraxen", new OraxenFactory());
         itemRegisters.put("hdb", new HDBFactory());
         itemRegisters.put("mythicitem", new MMFactory());
+        itemRegisters.put("mmoitem", new MMOFactory());
     }
 
     public void addItemFactory(String id, ItemFactory factory) {
