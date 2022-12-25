@@ -11,16 +11,17 @@ import java.util.Map;
 
 public class CustomItemHandler {
 
-    private final Map<String,ItemFactory> itemRegisters;
-
-    public CustomItemHandler() {
-        itemRegisters = new HashMap<>();
-        itemRegisters.put("itemsadder", new IAFactory());
-        itemRegisters.put("oraxen", new OraxenFactory());
-        itemRegisters.put("hdb", new HDBFactory());
-        itemRegisters.put("mythicitem", new MMFactory());
-        itemRegisters.put("mmoitem", new MMOFactory());
-    }
+    private final Map<String,ItemFactory> itemRegisters = new HashMap<String,ItemFactory>() {
+        {
+            put("itemsadder", new IAFactory());
+            put("oraxen", new OraxenFactory());
+            put("hdb", new HDBFactory());
+            put("mythicitem", new MMFactory());
+            put("mmoitem", new MMOFactory());
+            put("executableblock", new EBFactory());
+            put("executableitem",new EIFactory());
+        }
+    };
 
     public void addItemFactory(String id, ItemFactory factory) {
         itemRegisters.put(id,factory);

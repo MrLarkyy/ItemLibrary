@@ -1,5 +1,8 @@
 package xyz.larkyy.itemlibrary.factories;
 
+import net.Indyuce.mmoitems.MMOItems;
+import net.Indyuce.mmoitems.api.Type;
+import org.bukkit.Bukkit;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import xyz.larkyy.itemlibrary.CustomItem;
@@ -13,6 +16,6 @@ public class MMOFactory implements ItemFactory {
     @Override
     public CustomItem create(String identifier, String name, List<String> description, int amount, int modeldata, Map<Enchantment,Integer> enchantments, List<ItemFlag> flags) {
         String[] strs = identifier.split(":");
-        return new MMOItem(strs[0],strs[1],name,description,amount,modeldata,enchantments,flags);
+        return new MMOItem(strs[1],strs[0],name,description,amount,modeldata,enchantments,flags);
     }
 }

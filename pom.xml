@@ -6,7 +6,7 @@
 
     <groupId>xyz.larkyy</groupId>
     <artifactId>ItemLibrary</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.11</version>
     <packaging>jar</packaging>
 
     <name>ItemLibrary</name>
@@ -68,6 +68,10 @@
 
     <repositories>
         <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
             <id>phoenix</id>
             <url>https://nexus.phoenixdvpt.fr/repository/maven-public/</url>
         </repository>
@@ -95,6 +99,11 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.Ssomar-Developement</groupId>
+            <artifactId>SCore</artifactId>
+            <version>3.4.7</version>
+        </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
