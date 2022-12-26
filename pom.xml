@@ -103,6 +103,7 @@
             <groupId>com.github.Ssomar-Developement</groupId>
             <artifactId>SCore</artifactId>
             <version>3.4.7</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
