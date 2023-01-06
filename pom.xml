@@ -6,7 +6,7 @@
 
     <groupId>xyz.larkyy</groupId>
     <artifactId>ItemLibrary</artifactId>
-    <version>0.0.11</version>
+    <version>0.0.13</version>
     <packaging>jar</packaging>
 
     <name>ItemLibrary</name>
@@ -112,7 +112,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>xyz.larkyy</groupId>
+            <groupId>com.github.MrLarkyy</groupId>
             <artifactId>ColorUtils</artifactId>
             <version>1.0</version>
         </dependency>
